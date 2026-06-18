@@ -16,6 +16,7 @@ This project automates the end-to-end workflow of reading client records from a 
 * Export document to PDF
 * Save PDF to Google Drive
 * Write PDF URL back to spreadsheet
+* Temporary Google Docs cleanup after PDF generation
 
 ## Workflow
 

@@ -14,9 +14,11 @@ function generatePdf(clientId) {
   const pdfBlob = exportDocToPdf(docId);
   const savedFile = savePdf(pdfBlob, client);
   const updatedRowNumber = updatePdfUrl(clientId, savedFile.fileUrl);
+  deleteTemporaryDoc(docId);
 
   Logger.log(updatedRowNumber);
   Logger.log(savedFile.fileUrl);
+  Logger.log(`Temporary document deleted: ${docId}`);
 }
 
 function testGetClient() {

@@ -15,3 +15,11 @@ function savePdf(pdfBlob, client) {
     fileName: file.getName(),
   };
 }
+
+/**
+ * Moves a temporary copied Google Doc to Trash after PDF generation.
+ * @param {string} docId
+ */
+function deleteTemporaryDoc(docId) {
+  DriveApp.getFileById(docId).setTrashed(true);
+}
