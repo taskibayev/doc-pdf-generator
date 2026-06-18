@@ -20,11 +20,3 @@ function generatePdf(clientId) {
   Logger.log(savedFile.fileUrl);
   Logger.log(`Temporary document deleted: ${docId}`);
 }
-
-function testGetClient() {
-  generatePdf(1);
-}
-
-function testGenerateDocument() {
-  generatePdf(1);
-}
